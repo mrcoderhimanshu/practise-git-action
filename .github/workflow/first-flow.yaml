@@ -1,0 +1,16 @@
+name: my-first-workflow
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hey its github actions. Coooooooooooooooooooool dude"
+      - name: multiline script
+        run: | 
+          node -v
+          npm -v
+          git -v
+          curl -v
